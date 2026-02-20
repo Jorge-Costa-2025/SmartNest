@@ -1,0 +1,70 @@
+/*retirar todas as margens de todos os elementos */
+
+*{
+    margin:0; /*margem externa*/
+    padding: 0; /*magem interna*/
+    box-sizing: border-box;
+
+
+}
+body{
+    background-image:url("../img/tela1.png");
+    background-size: 100%;
+    background-position: 0 -100px;
+    color:#fff;
+    font-family: "arial";
+    margin:15px;
+}
+h1{
+    font-size: 12pt;
+}
+h2{
+    font-size: 35pt;
+    margin-top: 40px;
+}
+
+/* Vamos fixar o rodape na parte onferior da tela. Utilizaremos a posição 
+fixa com margen de base (bottom) proxima de zero(0) */
+
+#rodape{
+position: fixed;
+bottom: 20px;
+display: flex;
+
+}
+
+#avancar {
+    display: flex;
+    background-color: #4b4949;
+    width: 250px;
+    border-radius: 50px;
+    align-items: center;  /*alinhamento da vertifical (centro)*/
+    justify-content: space-between; /*Distribui o conteudo dentro da area*/
+    margin-left: 10px;
+    padding-right: 10px;
+    border: 3px solid #4b4949;
+    font-family: 'Segoe UI';
+    font-size: 15pt;
+}
+
+#voltar{
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avancar #play{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #321e5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3a3838;
+}

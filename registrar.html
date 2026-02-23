@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="css/formato.css">
 </head>
 <body>
+
+
+    <div id="setavoltar"> < </div> 
+
     <h1 id="titulo">SmartNest</h1>
     <form action="">
-        <p id="welcome">Welcome to SmartNest Login now</p>
-        <label for="">E-Mail</label>
+        <p id="welcome">Creat an Account?</p>
+       
+        <label for="txtname">name</label>
+        <input type="name" name="txtnome" id="txtnome" required>
+
+        <label for="txtemail">E-mail</label>
         <input type="email" name="txtemail" id="txtemail" required>
-        <label for=""Password>Password</label>
-        <input type="password" name="txtpassword" id="txtpassword">
+
+        <label for="txtpassword">Password</label>
+        <input type="password" name="txtpassword" id="txtpassword" required>
+        
         <div id="lembrete">
             <input type="checkbox">
-            <span>Remenber me</span>
-            <span>Forget password</span>
+            <span>I agree to the</span>
+            <span>terms and services</span>
         </div>
 
         <input type="button" value="Login">
